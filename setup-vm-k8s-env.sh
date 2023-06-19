@@ -77,5 +77,5 @@ source "$HOME/.bashrc"
 
 # Run gcloud command to get credentials for the specified cluster
 echo "Running gcloud command to get cluster credentials..."
-gcloud container clusters get-credentials cloud-k8s-prod --region us-east4 --project rcp-prod
+gcloud container clusters get-credentials $GKE_CLUSTER_NAME --region $GCP_REGION --project $GCP_PROJECT_ID
 echo "Dev environment setup complete!"
